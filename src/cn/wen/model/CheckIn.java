@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class CheckIn {
 	private String ID;
-	private ClassRoom classRoom;
-	private Student student;
+	private String c_mac;
+	private String stu_mac;
 	private Date time;
 
 	public String getID() {
@@ -16,21 +16,6 @@ public class CheckIn {
 		ID = iD;
 	}
 
-	public ClassRoom getClassRoom() {
-		return classRoom;
-	}
-
-	public void setClassRoom(ClassRoom classRoom) {
-		this.classRoom = classRoom;
-	}
-
-	public Student getStudent() {
-		return student;
-	}
-
-	public void setStudent(Student student) {
-		this.student = student;
-	}
 
 	public Date getTime() {
 		return time;
@@ -40,4 +25,21 @@ public class CheckIn {
 		this.time = time;
 	}
 
+	public String getC_mac() {
+		return c_mac;
+	}
+
+	public void setC_mac(String c_mac) {
+		this.c_mac = c_mac;
+	}
+
+	public String getStu_mac() {
+		return stu_mac;
+	}
+
+	public void setStu_mac(String stu_mac) {
+		this.stu_mac = stu_mac;
+	}
+
+	
 }

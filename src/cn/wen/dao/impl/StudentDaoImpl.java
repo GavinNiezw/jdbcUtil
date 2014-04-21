@@ -26,14 +26,14 @@ public class StudentDaoImpl implements IStudentDao {
 
 	@Override
 	public boolean save(Student stu) {
-		this.sql = "insert into t_student values(?,?,?,?,?)";
+		this.sql = "insert into t_student(id,mac,name,phone_number,stu_no) values(?,?,?,?,?)";
 
 		try {
 			PreparedStatement statement = conn.prepareStatement(this.sql);
 			statement.setString(1, stu.getID());
 			statement.setString(2, stu.getMAC());
 			statement.setString(3, stu.getName());
-			statement.setString(4, stu.getPhoneNumber());
+			statement.setString(4, stu.getPhone_Number());
 			statement.setString(5, stu.getSTU_NO());
 
 			statement.execute();
@@ -69,7 +69,7 @@ public class StudentDaoImpl implements IStudentDao {
 			PreparedStatement statement = conn.prepareStatement(this.sql);
 			statement.setString(1, stu.getName());
 			statement.setString(2, stu.getMAC());
-			statement.setString(3, stu.getPhoneNumber());
+			statement.setString(3, stu.getPhone_Number());
 			statement.setString(4, stu.getSTU_NO());
 			statement.setString(5, stu.getID());
 
@@ -97,7 +97,7 @@ public class StudentDaoImpl implements IStudentDao {
 				stu.setID(result.getString("id"));
 				stu.setMAC(result.getString("MAC"));
 				stu.setName(result.getString("name"));
-				stu.setPhoneNumber(result.getString("phone_number"));
+				stu.setPhone_Number(result.getString("phone_number"));
 				stu.setSTU_NO(result.getString("stu_no"));
 				return stu;
 			}

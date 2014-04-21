@@ -4,7 +4,7 @@ public class Student {
 	private String ID;
 	private String Name;
 	private String MAC;
-	private String PhoneNumber;
+	private String Phone_Number;
 	private String STU_NO;
 
 	public String getID() {
@@ -31,13 +31,6 @@ public class Student {
 		MAC = mAC;
 	}
 
-	public String getPhoneNumber() {
-		return PhoneNumber;
-	}
-
-	public void setPhoneNumber(String phoneNumber) {
-		PhoneNumber = phoneNumber;
-	}
 
 	public String getSTU_NO() {
 		return STU_NO;
@@ -47,12 +40,18 @@ public class Student {
 		STU_NO = sTU_NO;
 	}
 
+	public String getPhone_Number() {
+		return Phone_Number;
+	}
+
+	public void setPhone_Number(String phone_Number) {
+		Phone_Number = phone_Number;
+	}
+
 	@Override
 	public String toString() {
 		return "Student [ID=" + ID + ", Name=" + Name + ", MAC=" + MAC
-				+ ", PhoneNumber=" + PhoneNumber + ", STU_NO=" + STU_NO + "]";
+				+ ", Phone_Number=" + Phone_Number + ", STU_NO=" + STU_NO + "]";
 	}
-	
-	
 
 }

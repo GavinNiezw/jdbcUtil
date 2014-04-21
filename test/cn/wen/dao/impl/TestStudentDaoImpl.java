@@ -14,7 +14,7 @@ public class TestStudentDaoImpl {
 		stu.setID("1");
 		stu.setMAC("df:df:sa:dd:df:ff");
 		stu.setName("文");
-		stu.setPhoneNumber("02323");
+		stu.setPhone_Number("02323");
 		stu.setSTU_NO("12344");
 		stuDao.save(stu);
 	}
@@ -31,7 +31,7 @@ public class TestStudentDaoImpl {
 		stu.setID("1");
 		stu.setMAC("11111111111111111");
 		stu.setName("11");
-		stu.setPhoneNumber("1111");
+		stu.setPhone_Number("1111");
 		stu.setSTU_NO("1111111");
 		stuDao.update(stu);
 	}
